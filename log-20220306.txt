@@ -1,0 +1,542 @@
+2022-03-06 02:39:07.620 ERROR AS2ReceiverHandler: HTTP connection error on inbound message. [null]
+java.io.IOException: Invalid HTTP Request: Token Count - 0::: String length - 0 ::: String - 
+	at org.openas2.util.HTTPUtil.readRequest(HTTPUtil.java:319)
+	at org.openas2.util.HTTPUtil.readHTTP(HTTPUtil.java:166)
+	at org.openas2.util.HTTPUtil.readData(HTTPUtil.java:246)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:102)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-06 02:39:07.624 ERROR OpenAS2Exception: Error occurred:: Invalid HTTP Request: Token Count - 0::: String length - 0 ::: String - 
+    Sources: {}
+org.openas2.processor.receiver.NetException: Address = /172.104.159.48 port = 37960
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:107)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Invalid HTTP Request: Token Count - 0::: String length - 0 ::: String - 
+	at org.openas2.util.HTTPUtil.readRequest(HTTPUtil.java:319)
+	at org.openas2.util.HTTPUtil.readHTTP(HTTPUtil.java:166)
+	at org.openas2.util.HTTPUtil.readData(HTTPUtil.java:246)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:102)
+	... 4 more
+2022-03-06 02:39:07.625 FINE AS2ReceiverHandler: Error receiving message for inbound AS2 request. There is no data. [null]
+org.openas2.OpenAS2Exception: Missing data in AS2 request.
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:124)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-06 02:39:07.686 ERROR HTTPUtil: Inbound HTTP request does not provide means to determine data length: GET /
+	Headers: 
+2022-03-06 02:39:07.686 ERROR AS2ReceiverHandler: HTTP connection error on inbound message. [null]
+java.io.IOException: Content-Length missing and no "Transfer-Encoding" header found to determine how to read message body.
+	at org.openas2.util.HTTPUtil.readData(HTTPUtil.java:262)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:102)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-06 02:39:07.686 ERROR OpenAS2Exception: Error occurred:: Content-Length missing and no "Transfer-Encoding" header found to determine how to read message body.
+    Sources: {}
+org.openas2.processor.receiver.NetException: Address = /172.104.159.48 port = 44350
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:107)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Content-Length missing and no "Transfer-Encoding" header found to determine how to read message body.
+	at org.openas2.util.HTTPUtil.readData(HTTPUtil.java:262)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:102)
+	... 4 more
+2022-03-06 02:39:07.686 FINE AS2ReceiverHandler: Error receiving message for inbound AS2 request. There is no data. [null]
+org.openas2.OpenAS2Exception: Missing data in AS2 request.
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:124)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-06 02:39:07.730 ERROR HTTPUtil: Inbound HTTP request does not provide means to determine data length: OPTIONS /
+	Headers: 
+2022-03-06 02:39:07.731 ERROR AS2ReceiverHandler: HTTP connection error on inbound message. [null]
+java.io.IOException: Content-Length missing and no "Transfer-Encoding" header found to determine how to read message body.
+	at org.openas2.util.HTTPUtil.readData(HTTPUtil.java:262)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:102)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-06 02:39:07.732 ERROR OpenAS2Exception: Error occurred:: Content-Length missing and no "Transfer-Encoding" header found to determine how to read message body.
+    Sources: {}
+org.openas2.processor.receiver.NetException: Address = /172.104.159.48 port = 44390
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:107)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Content-Length missing and no "Transfer-Encoding" header found to determine how to read message body.
+	at org.openas2.util.HTTPUtil.readData(HTTPUtil.java:262)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:102)
+	... 4 more
+2022-03-06 02:39:07.733 FINE AS2ReceiverHandler: Error receiving message for inbound AS2 request. There is no data. [null]
+org.openas2.OpenAS2Exception: Missing data in AS2 request.
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:124)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-06 02:39:07.774 ERROR HTTPUtil: Inbound HTTP request does not provide means to determine data length: OPTIONS /
+	Headers: 
+2022-03-06 02:39:07.774 ERROR AS2ReceiverHandler: HTTP connection error on inbound message. [null]
+java.io.IOException: Content-Length missing and no "Transfer-Encoding" header found to determine how to read message body.
+	at org.openas2.util.HTTPUtil.readData(HTTPUtil.java:262)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:102)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-06 02:39:07.775 ERROR OpenAS2Exception: Error occurred:: Content-Length missing and no "Transfer-Encoding" header found to determine how to read message body.
+    Sources: {}
+org.openas2.processor.receiver.NetException: Address = /172.104.159.48 port = 44406
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:107)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Content-Length missing and no "Transfer-Encoding" header found to determine how to read message body.
+	at org.openas2.util.HTTPUtil.readData(HTTPUtil.java:262)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:102)
+	... 4 more
+2022-03-06 02:39:07.775 FINE AS2ReceiverHandler: Error receiving message for inbound AS2 request. There is no data. [null]
+org.openas2.OpenAS2Exception: Missing data in AS2 request.
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:124)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-06 02:39:12.816 ERROR AS2ReceiverHandler: HTTP connection error on inbound message. [null]
+java.io.IOException: Invalid HTTP Request: Token Count - 1::: String length - 44 ::: String -   (rþ          |                    
+	at org.openas2.util.HTTPUtil.readRequest(HTTPUtil.java:319)
+	at org.openas2.util.HTTPUtil.readHTTP(HTTPUtil.java:166)
+	at org.openas2.util.HTTPUtil.readData(HTTPUtil.java:246)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:102)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-06 02:39:12.825 ERROR OpenAS2Exception: Error occurred:: Invalid HTTP Request: Token Count - 1::: String length - 44 ::: String -   (rþ          |                    
+    Sources: {}
+org.openas2.processor.receiver.NetException: Address = /172.104.159.48 port = 44430
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:107)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Invalid HTTP Request: Token Count - 1::: String length - 44 ::: String -   (rþ          |                    
+	at org.openas2.util.HTTPUtil.readRequest(HTTPUtil.java:319)
+	at org.openas2.util.HTTPUtil.readHTTP(HTTPUtil.java:166)
+	at org.openas2.util.HTTPUtil.readData(HTTPUtil.java:246)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:102)
+	... 4 more
+2022-03-06 02:39:12.826 FINE AS2ReceiverHandler: Error receiving message for inbound AS2 request. There is no data. [null]
+org.openas2.OpenAS2Exception: Missing data in AS2 request.
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:124)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-06 02:39:17.831 ERROR AS2ReceiverHandler: HTTP connection error on inbound message. [null]
+java.io.IOException: Invalid HTTP Request: Token Count - 1::: String length - 32 ::: String -           versionbind   
+	at org.openas2.util.HTTPUtil.readRequest(HTTPUtil.java:319)
+	at org.openas2.util.HTTPUtil.readHTTP(HTTPUtil.java:166)
+	at org.openas2.util.HTTPUtil.readData(HTTPUtil.java:246)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:102)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-06 02:39:17.832 ERROR OpenAS2Exception: Error occurred:: Invalid HTTP Request: Token Count - 1::: String length - 32 ::: String -           versionbind   
+    Sources: {}
+org.openas2.processor.receiver.NetException: Address = /172.104.159.48 port = 49222
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:107)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Invalid HTTP Request: Token Count - 1::: String length - 32 ::: String -           versionbind   
+	at org.openas2.util.HTTPUtil.readRequest(HTTPUtil.java:319)
+	at org.openas2.util.HTTPUtil.readHTTP(HTTPUtil.java:166)
+	at org.openas2.util.HTTPUtil.readData(HTTPUtil.java:246)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:102)
+	... 4 more
+2022-03-06 02:39:17.833 FINE AS2ReceiverHandler: Error receiving message for inbound AS2 request. There is no data. [null]
+org.openas2.OpenAS2Exception: Missing data in AS2 request.
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:124)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-06 02:39:17.848 ERROR AS2ReceiverHandler: HTTP connection error on inbound message. [null]
+java.io.IOException: Invalid HTTP Request: Token Count - 1::: String length - 4 ::: String - HELP
+	at org.openas2.util.HTTPUtil.readRequest(HTTPUtil.java:319)
+	at org.openas2.util.HTTPUtil.readHTTP(HTTPUtil.java:166)
+	at org.openas2.util.HTTPUtil.readData(HTTPUtil.java:246)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:102)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-06 02:39:17.849 ERROR OpenAS2Exception: Error occurred:: Invalid HTTP Request: Token Count - 1::: String length - 4 ::: String - HELP
+    Sources: {}
+org.openas2.processor.receiver.NetException: Address = /172.104.159.48 port = 54598
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:107)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Invalid HTTP Request: Token Count - 1::: String length - 4 ::: String - HELP
+	at org.openas2.util.HTTPUtil.readRequest(HTTPUtil.java:319)
+	at org.openas2.util.HTTPUtil.readHTTP(HTTPUtil.java:166)
+	at org.openas2.util.HTTPUtil.readData(HTTPUtil.java:246)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:102)
+	... 4 more
+2022-03-06 02:39:17.850 FINE AS2ReceiverHandler: Error receiving message for inbound AS2 request. There is no data. [null]
+org.openas2.OpenAS2Exception: Missing data in AS2 request.
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:124)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-06 02:39:22.885 ERROR AS2ReceiverHandler: HTTP connection error on inbound message. [null]
+java.io.IOException: Invalid HTTP Request: Token Count - 1::: String length - 88 ::: String -   S  O ?G×÷º,îê²`~ó ý{¹ÕÈwæÄÛ<=Ûoïn  (   
+ f   e d c b a `   	      
+	at org.openas2.util.HTTPUtil.readRequest(HTTPUtil.java:319)
+	at org.openas2.util.HTTPUtil.readHTTP(HTTPUtil.java:166)
+	at org.openas2.util.HTTPUtil.readData(HTTPUtil.java:246)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:102)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-06 02:39:22.886 ERROR OpenAS2Exception: Error occurred:: Invalid HTTP Request: Token Count - 1::: String length - 88 ::: String -   S  O ?G×÷º,îê²`~ó ý{¹ÕÈwæÄÛ<=Ûoïn  (   
+ f   e d c b a `   	      
+    Sources: {}
+org.openas2.processor.receiver.NetException: Address = /172.104.159.48 port = 54616
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:107)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Invalid HTTP Request: Token Count - 1::: String length - 88 ::: String -   S  O ?G×÷º,îê²`~ó ý{¹ÕÈwæÄÛ<=Ûoïn  (   
+ f   e d c b a `   	      
+	at org.openas2.util.HTTPUtil.readRequest(HTTPUtil.java:319)
+	at org.openas2.util.HTTPUtil.readHTTP(HTTPUtil.java:166)
+	at org.openas2.util.HTTPUtil.readData(HTTPUtil.java:246)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:102)
+	... 4 more
+2022-03-06 02:39:22.887 FINE AS2ReceiverHandler: Error receiving message for inbound AS2 request. There is no data. [null]
+org.openas2.OpenAS2Exception: Missing data in AS2 request.
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:124)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-06 02:39:22.902 ERROR AS2ReceiverHandler: HTTP connection error on inbound message. [null]
+java.io.IOException: Invalid HTTP Request: Token Count - 1::: String length - 63 ::: String -   i  eU§ärandom1random2random3random4   / 
+  9  ÿ  0 
+	at org.openas2.util.HTTPUtil.readRequest(HTTPUtil.java:319)
+	at org.openas2.util.HTTPUtil.readHTTP(HTTPUtil.java:166)
+	at org.openas2.util.HTTPUtil.readData(HTTPUtil.java:246)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:102)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-06 02:39:22.903 ERROR OpenAS2Exception: Error occurred:: Invalid HTTP Request: Token Count - 1::: String length - 63 ::: String -   i  eU§ärandom1random2random3random4   / 
+  9  ÿ  0 
+    Sources: {}
+org.openas2.processor.receiver.NetException: Address = /172.104.159.48 port = 58580
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:107)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Invalid HTTP Request: Token Count - 1::: String length - 63 ::: String -   i  eU§ärandom1random2random3random4   / 
+  9  ÿ  0 
+	at org.openas2.util.HTTPUtil.readRequest(HTTPUtil.java:319)
+	at org.openas2.util.HTTPUtil.readHTTP(HTTPUtil.java:166)
+	at org.openas2.util.HTTPUtil.readData(HTTPUtil.java:246)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:102)
+	... 4 more
+2022-03-06 02:39:22.904 FINE AS2ReceiverHandler: Error receiving message for inbound AS2 request. There is no data. [null]
+org.openas2.OpenAS2Exception: Missing data in AS2 request.
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:124)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-06 02:39:27.947 ERROR AS2ReceiverHandler: HTTP connection error on inbound message. [null]
+java.io.IOException: Invalid HTTP Request: Token Count - 1::: String length - 117 ::: String -    qjn0k¡¢
+¤^0\  P ¢NM£0  ¡0krbtgtNM¥19700101000000Z§¹Ù¨0
+	at org.openas2.util.HTTPUtil.readRequest(HTTPUtil.java:319)
+	at org.openas2.util.HTTPUtil.readHTTP(HTTPUtil.java:166)
+	at org.openas2.util.HTTPUtil.readData(HTTPUtil.java:246)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:102)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-06 02:39:27.951 ERROR OpenAS2Exception: Error occurred:: Invalid HTTP Request: Token Count - 1::: String length - 117 ::: String -    qjn0k¡¢
+¤^0\  P ¢NM£0  ¡0krbtgtNM¥19700101000000Z§¹Ù¨0
+    Sources: {}
+org.openas2.processor.receiver.NetException: Address = /172.104.159.48 port = 58622
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:107)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Invalid HTTP Request: Token Count - 1::: String length - 117 ::: String -    qjn0k¡¢
+¤^0\  P ¢NM£0  ¡0krbtgtNM¥19700101000000Z§¹Ù¨0
+	at org.openas2.util.HTTPUtil.readRequest(HTTPUtil.java:319)
+	at org.openas2.util.HTTPUtil.readHTTP(HTTPUtil.java:166)
+	at org.openas2.util.HTTPUtil.readData(HTTPUtil.java:246)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:102)
+	... 4 more
+2022-03-06 02:39:27.952 FINE AS2ReceiverHandler: Error receiving message for inbound AS2 request. There is no data. [null]
+org.openas2.OpenAS2Exception: Missing data in AS2 request.
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:124)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-06 02:39:32.963 ERROR HTTPUtil: Inbound HTTP request does not provide means to determine data length:    ¤ÿSMBr    @              @     PC NETWORK
+	Headers: 
+2022-03-06 02:39:32.963 ERROR AS2ReceiverHandler: HTTP connection error on inbound message. [null]
+java.io.IOException: Content-Length missing and no "Transfer-Encoding" header found to determine how to read message body.
+	at org.openas2.util.HTTPUtil.readData(HTTPUtil.java:262)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:102)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-06 02:39:32.964 ERROR OpenAS2Exception: Error occurred:: Content-Length missing and no "Transfer-Encoding" header found to determine how to read message body.
+    Sources: {}
+org.openas2.processor.receiver.NetException: Address = /172.104.159.48 port = 35426
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:107)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Content-Length missing and no "Transfer-Encoding" header found to determine how to read message body.
+	at org.openas2.util.HTTPUtil.readData(HTTPUtil.java:262)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:102)
+	... 4 more
+2022-03-06 02:39:32.964 FINE AS2ReceiverHandler: Error receiving message for inbound AS2 request. There is no data. [null]
+org.openas2.OpenAS2Exception: Missing data in AS2 request.
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:124)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-06 02:39:37.980 ERROR AS2ReceiverHandler: HTTP connection error on inbound message. [null]
+java.io.IOException: Invalid HTTP Request: Token Count - 1::: String length - 12 ::: String - l          
+	at org.openas2.util.HTTPUtil.readRequest(HTTPUtil.java:319)
+	at org.openas2.util.HTTPUtil.readHTTP(HTTPUtil.java:166)
+	at org.openas2.util.HTTPUtil.readData(HTTPUtil.java:246)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:102)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-06 02:39:37.980 ERROR OpenAS2Exception: Error occurred:: Invalid HTTP Request: Token Count - 1::: String length - 12 ::: String - l          
+    Sources: {}
+org.openas2.processor.receiver.NetException: Address = /172.104.159.48 port = 40184
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:107)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Invalid HTTP Request: Token Count - 1::: String length - 12 ::: String - l          
+	at org.openas2.util.HTTPUtil.readRequest(HTTPUtil.java:319)
+	at org.openas2.util.HTTPUtil.readHTTP(HTTPUtil.java:166)
+	at org.openas2.util.HTTPUtil.readData(HTTPUtil.java:246)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:102)
+	... 4 more
+2022-03-06 02:39:37.981 FINE AS2ReceiverHandler: Error receiving message for inbound AS2 request. There is no data. [null]
+org.openas2.OpenAS2Exception: Missing data in AS2 request.
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:124)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-06 02:39:39.014 FINE AS2ReceiverHandler: received 0 bytes in 0.3 seconds at 0 Bps 172.104.159.48 64190 [null]
+2022-03-06 02:39:39.014 ERROR AS2ReceiverHandler: Error extracting received message. [null]
+javax.mail.internet.ParseException: In Content-Type string <null>, expected MIME type, got null
+	at javax.mail.internet.ContentType.<init>(ContentType.java:97)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:151)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-06 02:39:39.020 ERROR OpenAS2Exception: Error occurred:: Partnership not found: Partnership null Sender IDs = {as2_id=null} Receiver IDs = {as2_id=null} Attributes = {}
+    Sources: {message=Message From:{}To:{}
+Headers:{Via=SIP/2.0/TCP nm;branch=foo, From=<sip:nm@nm>;tag=root, To=<sip:nm2@nm2>, Call-ID=50000, CSeq=42 OPTIONS, Max-Forwards=70, Content-Length=0, Contact=<sip:nm@nm>, Accept=application/sdp}
+Attributes:{HTTP_REQUEST_TYPE=OPTIONS, destination_ip=/172.18.0.3, destination_port=10080, HTTP_REQUEST_URL=sip:nm, source_port=64190, source_ip=/172.104.159.48}
+MDN:MDN From:{as2_id=null}To:{as2_id=null}
+Headers:{Date=Sun, 06 Mar 2022 02:39:39 +0000, MIME-Version=1.0, AS2-Version=1.1, Connection=close, TE, User-Agent=OpenAS2 Server v2.14.0, Server=OpenAS2 Server v2.14.0}
+Attributes:{}
+Text: 
+null
+}
+org.openas2.WrappedException: Error creating MDN
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:478)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:275)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.openas2.partner.PartnershipNotFoundException: Partnership not found: Partnership null Sender IDs = {as2_id=null} Receiver IDs = {as2_id=null} Attributes = {}
+	at org.openas2.partner.BasePartnershipFactory.getPartnership(BasePartnershipFactory.java:33)
+	at org.openas2.partner.BasePartnershipFactory.updatePartnership(BasePartnershipFactory.java:100)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.createMDN(AS2ReceiverHandler.java:532)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:467)
+	... 5 more
+2022-03-06 02:39:39.020 ERROR AS2ReceiverHandler: Unexpected error occurred creating MDN: Partnership not found: Partnership null Sender IDs = {as2_id=null} Receiver IDs = {as2_id=null} Attributes = {} [null]
+org.openas2.partner.PartnershipNotFoundException: Partnership not found: Partnership null Sender IDs = {as2_id=null} Receiver IDs = {as2_id=null} Attributes = {}
+	at org.openas2.partner.BasePartnershipFactory.getPartnership(BasePartnershipFactory.java:33)
+	at org.openas2.partner.BasePartnershipFactory.updatePartnership(BasePartnershipFactory.java:100)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.createMDN(AS2ReceiverHandler.java:532)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.sendResponse(AS2ReceiverHandler.java:467)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:275)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-06 02:39:39.021 ERROR OpenAS2Exception: Error occurred:: In Content-Type string <null>, expected MIME type, got null
+    Sources: {message=Message From:{}To:{}
+Headers:{Via=SIP/2.0/TCP nm;branch=foo, From=<sip:nm@nm>;tag=root, To=<sip:nm2@nm2>, Call-ID=50000, CSeq=42 OPTIONS, Max-Forwards=70, Content-Length=0, Contact=<sip:nm@nm>, Accept=application/sdp}
+Attributes:{HTTP_REQUEST_TYPE=OPTIONS, destination_ip=/172.18.0.3, destination_port=10080, HTTP_REQUEST_URL=sip:nm, source_port=64190, source_ip=/172.104.159.48}
+MDN:MDN From:{as2_id=null}To:{as2_id=null}
+Headers:{Date=Sun, 06 Mar 2022 02:39:39 +0000, MIME-Version=1.0, AS2-Version=1.1, Connection=close, TE, User-Agent=OpenAS2 Server v2.14.0, Server=OpenAS2 Server v2.14.0}
+Attributes:{}
+Text: 
+null
+}
+org.openas2.DispositionException: automatic-action/MDN-sent-automatically; processed/Error:unexpected-processing-error
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:180)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: javax.mail.internet.ParseException: In Content-Type string <null>, expected MIME type, got null
+	at javax.mail.internet.ContentType.<init>(ContentType.java:97)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:151)
+	... 4 more
+2022-03-06 02:39:39.022 FINE IOUtil: Created directory /opt/openas2/bin/../config/../data/inbox/error
+2022-03-06 02:39:39.024 ERROR OpenAS2Exception: Error occurred:: Stored invalid message to /opt/openas2/bin/../config/../data/inbox/error/20220306023939.9600ab59-7eb8-4329-b75a-c4dbc0685623
+    Sources: {}
+org.openas2.message.InvalidMessageException: Stored invalid message to /opt/openas2/bin/../config/../data/inbox/error/20220306023939.9600ab59-7eb8-4329-b75a-c4dbc0685623
+	at org.openas2.processor.receiver.NetModule.handleError(NetModule.java:142)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:276)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-06 02:39:42.479 ERROR AS2ReceiverHandler: HTTP connection error on inbound message. [null]
+java.io.IOException: Invalid HTTP Request: Token Count - 1::: String length - 63 ::: String -   i  eU§ärandom1random2random3random4   / 
+  9  ÿ  0 
+	at org.openas2.util.HTTPUtil.readRequest(HTTPUtil.java:319)
+	at org.openas2.util.HTTPUtil.readHTTP(HTTPUtil.java:166)
+	at org.openas2.util.HTTPUtil.readData(HTTPUtil.java:246)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:102)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-06 02:39:42.488 ERROR OpenAS2Exception: Error occurred:: Invalid HTTP Request: Token Count - 1::: String length - 63 ::: String -   i  eU§ärandom1random2random3random4   / 
+  9  ÿ  0 
+    Sources: {}
+org.openas2.processor.receiver.NetException: Address = /172.104.159.48 port = 48328
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:107)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Invalid HTTP Request: Token Count - 1::: String length - 63 ::: String -   i  eU§ärandom1random2random3random4   / 
+  9  ÿ  0 
+	at org.openas2.util.HTTPUtil.readRequest(HTTPUtil.java:319)
+	at org.openas2.util.HTTPUtil.readHTTP(HTTPUtil.java:166)
+	at org.openas2.util.HTTPUtil.readData(HTTPUtil.java:246)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:102)
+	... 4 more
+2022-03-06 02:39:42.488 FINE AS2ReceiverHandler: Error receiving message for inbound AS2 request. There is no data. [null]
+org.openas2.OpenAS2Exception: Missing data in AS2 request.
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:124)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-06 02:39:56.394 ERROR AS2ReceiverHandler: HTTP connection error on inbound message. [null]
+java.io.IOException: Invalid HTTP Request: Token Count - 0::: String length - 0 ::: String - 
+	at org.openas2.util.HTTPUtil.readRequest(HTTPUtil.java:319)
+	at org.openas2.util.HTTPUtil.readHTTP(HTTPUtil.java:166)
+	at org.openas2.util.HTTPUtil.readData(HTTPUtil.java:246)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:102)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-06 02:39:56.395 ERROR OpenAS2Exception: Error occurred:: Invalid HTTP Request: Token Count - 0::: String length - 0 ::: String - 
+    Sources: {}
+org.openas2.processor.receiver.NetException: Address = /172.104.159.48 port = 49140
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:107)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Invalid HTTP Request: Token Count - 0::: String length - 0 ::: String - 
+	at org.openas2.util.HTTPUtil.readRequest(HTTPUtil.java:319)
+	at org.openas2.util.HTTPUtil.readHTTP(HTTPUtil.java:166)
+	at org.openas2.util.HTTPUtil.readData(HTTPUtil.java:246)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:102)
+	... 4 more
+2022-03-06 02:39:56.396 ERROR AS2ReceiverHandler: HTTP connection error on inbound message. [null]
+2022-03-06 02:39:56.396 FINE AS2ReceiverHandler: Error receiving message for inbound AS2 request. There is no data. [null]
+org.openas2.OpenAS2Exception: Missing data in AS2 request.
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:124)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+java.io.IOException: Invalid HTTP Request: Token Count - 1::: String length - 30 ::: String -                bbbb0100000001
+	at org.openas2.util.HTTPUtil.readRequest(HTTPUtil.java:319)
+	at org.openas2.util.HTTPUtil.readHTTP(HTTPUtil.java:166)
+	at org.openas2.util.HTTPUtil.readData(HTTPUtil.java:246)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:102)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-03-06 02:39:56.397 ERROR OpenAS2Exception: Error occurred:: Invalid HTTP Request: Token Count - 1::: String length - 30 ::: String -                bbbb0100000001
+    Sources: {}
+org.openas2.processor.receiver.NetException: Address = /172.104.159.48 port = 48064
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:107)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Invalid HTTP Request: Token Count - 1::: String length - 30 ::: String -                bbbb0100000001
+	at org.openas2.util.HTTPUtil.readRequest(HTTPUtil.java:319)
+	at org.openas2.util.HTTPUtil.readHTTP(HTTPUtil.java:166)
+	at org.openas2.util.HTTPUtil.readData(HTTPUtil.java:246)
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:102)
+	... 4 more
+2022-03-06 02:39:56.398 FINE AS2ReceiverHandler: Error receiving message for inbound AS2 request. There is no data. [null]
+org.openas2.OpenAS2Exception: Missing data in AS2 request.
+	at org.openas2.processor.receiver.AS2ReceiverHandler.handle(AS2ReceiverHandler.java:124)
+	at org.openas2.processor.receiver.NetModule$ConnectionHandler.run(NetModule.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
