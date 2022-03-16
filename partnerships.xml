@@ -1,12 +1,12 @@
 <partnerships>
-    <partner name="XPO"
-             as2_id="XPO_OID"
+    <partner name="INXEPT"
+             as2_id="INXEPT"
              x509_alias="xpo"
              email="as2msgs@openas2.com"/>
 
-    <partner name="INX"
-             as2_id="INX_OID"
-             x509_alias="inx"
+    <partner name="ARCESB_CLOUD"
+             as2_id="ARCESB_CLOUD"
+             x509_alias="arcesbcloud"
              email="as2msgs@inx.com"/>
 
     <partner name="ORDERFULAS2"
@@ -14,14 +14,14 @@
              x509_alias="flok2"
              email="as2msgs@flok.com"/>
 
-    <partnership name="XPO-to-INX">
-        <sender name="XPO"/>
-        <receiver name="INX"/>
+    <partnership name="INXEPT-to-ARCESB_CLOUD">
+        <sender name="INXEPT"/>
+        <receiver name="ARCESB_CLOUD"/>
         <attribute name="protocol" value="as2"/>
         <attribute name="content_transfer_encoding" value="binary"/>
         <attribute name="compression_type" value="ZLIB"/>
         <attribute name="subject" value="File $attributes.filename$ sent from $sender.name$ to $receiver.name$"/>
-        <attribute name="as2_url" value="http://172.17.2.79:10080"/>
+        <attribute name="as2_url" value="http://40.69.135.5:8001/pub/Receive.rsb"/>
         <attribute name="as2_mdn_to" value="edi@xpo.com"/>
         <attribute name="as2_mdn_options"
                    value="signed-receipt-protocol=optional, pkcs7-signature; signed-receipt-micalg=optional, $attribute.sign$"/>
@@ -54,20 +54,20 @@
         <attribute name="attribute_values_regex_on_filename" value="([A-Za-z]*)([^.]*).edi"/>
 		-->
     </partnership>
-    <partnership name="INX-to-XPO">
-        <sender name="INX"/>
-        <receiver name="XPO"/>
+    <partnership name="ARCESB_CLOUD-to-INXEPT">
+        <sender name="ARCESB_CLOUD"/>
+        <receiver name="INXEPT"/>
     </partnership>
 
-    <partnership name="XPO-to-ORDERFULAS2">
-        <sender name="XPO"/>
+    <partnership name="INXEPT-to-ORDERFULAS2">
+        <sender name="INXEPT"/>
         <receiver name="ORDERFULAS2"/>
         <attribute name="protocol" value="as2"/>
         <attribute name="content_transfer_encoding" value="8bit"/>
         <attribute name="compression_type" value="ZLIB"/>
         <attribute name="subject" value="File $attributes.filename$ sent from $sender.name$ to $receiver.name$"/>
 	<attribute name="as2_url" value="https://ol.orderful.com/OAS2"/>
-        <attribute name="as2_mdn_to" value="edi@xpo.org"/>
+        <attribute name="as2_mdn_to" value="edi@inxeption.com"/>
         <attribute name="as2_mdn_options"
                    value="signed-receipt-protocol=optional, pkcs7-signature; signed-receipt-micalg=optional, $attribute.sign$"/>
         <!--  For enabling ASYNC MDN uncomment this attribute and set this to the URL partner must send MDN back to.
@@ -81,9 +81,9 @@
         <attribute name="rename_digest_to_old_name" value="false"/>
         <attribute name="remove_cms_algorithm_protection_attrib" value="false"/>
     </partnership>
-    <partnership name="ORDERFULAS2-to-XPO">
+    <partnership name="ORDERFULAS2-to-INXEPT">
         <sender name="ORDERFULAS2"/>
-        <receiver name="XPO"/>
+        <receiver name="INXEPT"/>
     </partnership>
 
 

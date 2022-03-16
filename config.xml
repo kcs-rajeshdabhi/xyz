@@ -15,7 +15,7 @@
                restapi.command.processor.enabled="false"
                module.AS2SenderModule.enabled="true"
                module.MDNSenderModule.enabled="true"
-               module.DbTrackingModule.enabled="true"
+               module.DbTrackingModule.enabled="false"
                module.MDNFileModule.enabled="true"
                module.MessageFileModule.enabled="true"
                module.DirectoryResenderModule.enabled="true"
@@ -99,13 +99,13 @@
               mimetype="application/EDI-X12"/>
       <!-- This directory polling module will is dedicated to sending to partner INX_OID -->
       <module classname="org.openas2.processor.receiver.AS2DirectoryPollingModule"
-              outboxdir="$properties.storageBaseDir$/toINX/"
+              outboxdir="$properties.storageBaseDir$/toARCESB_CLOUD/"
               errordir="$properties.storageBaseDir$/toINX/error/$date.YYYY$/$date.MM$"
               stored_error_filename="$msg.attributes.filename$-$date.YYYY$-$date.MM$-$msg.headers.message-id$"
               sentdir="$properties.storageBaseDir$/$msg.sender.as2_id$-$msg.receiver.as2_id$/sent/$date.YYYY$/$date.MM$"
               stored_sent_filename="$msg.attributes.filename$-$msg.headers.message-id$"
               interval="5"
-              defaults="sender.as2_id=XPO_OID, receiver.as2_id=INX_OID"
+              defaults="sender.as2_id=INXEPT, receiver.as2_id=ARCESB_CLOUD"
               sendfilename="true"
               mimetype="application/EDI-X12"/>
       <!-- This directory polling module will is dedicated to sending to partner FLOK_OID -->
@@ -113,7 +113,7 @@
               outboxdir="$properties.storageBaseDir$/toFLOK"
               errordir="$properties.storageBaseDir$/toFLOK/error"
               interval="5"
-              defaults="sender.as2_id=XPO_OID, receiver.as2_id=ORDERFULAS2"
+              defaults="sender.as2_id=INXEPT, receiver.as2_id=ORDERFULAS2"
               sendfilename="true"
               mimetype="application/EDI-X12"/>
       <module enabled="$properties.module.DbTrackingModule.enabled$"
